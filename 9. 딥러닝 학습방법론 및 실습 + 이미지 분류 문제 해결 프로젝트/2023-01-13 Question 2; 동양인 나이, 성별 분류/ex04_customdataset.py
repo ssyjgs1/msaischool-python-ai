@@ -29,12 +29,12 @@ class CustomDataset(Dataset) :
         if self.transform is not None :
             image = self.transform(image=image)["image"]
 
-        # 4. return image, label
-        return image, label
+        # 4. return image, label, image path list
+        return image, label, image_file_path
     def __len__(self):
         return len(self.all_path)
 
 
-# test = CustomDataset("./dataset/train" , transform=None)
+# test = CustomDataset("./dataset/test" , transform=None)
 # for i in test :
 #     print(i)

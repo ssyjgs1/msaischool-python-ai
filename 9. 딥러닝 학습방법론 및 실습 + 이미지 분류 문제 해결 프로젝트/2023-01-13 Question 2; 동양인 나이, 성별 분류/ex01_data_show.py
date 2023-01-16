@@ -23,7 +23,8 @@ def image_show(data_path):
     # plt.barh(x_data, y_data, color="maroon", height= 0.3)
     plt.show()
 
-image_show("./0110/raw_data")  ## 경로 변경 필요 !!!!!!!!!!!!
-image_show("./0110/dataset/train")
-image_show("./0110/dataset/val")
-image_show("./0110/dataset/test")
+image_show("./previous_data")  ## 경로 변경 필요 !!!!!!!!!!!!
+image_show("./raw_data")  ## 경로 변경 필요 !!!!!!!!!!!!
+# image_show("./dataset/train")
+# image_show("./dataset/val")
+# image_show("./dataset/test")

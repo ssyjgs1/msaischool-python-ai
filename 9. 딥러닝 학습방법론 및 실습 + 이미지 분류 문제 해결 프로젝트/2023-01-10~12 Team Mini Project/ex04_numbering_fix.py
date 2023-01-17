@@ -1,3 +1,5 @@
+"""본 코드는 기존 ex04_main.py가 수정 됨에 따라 미사용함"""
+
 import os
 import sys
 import torch    

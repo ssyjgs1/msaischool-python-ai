@@ -15,6 +15,7 @@ import seaborn as sn
 import pandas as pd
 import matplotlib.pyplot as plt
 
+model_num = 1
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 def test_main():
     test_aug = A.Compose([
@@ -39,7 +40,7 @@ def test_main():
 
     test(model, test_loader, device)  # 테스트 진행할때 실행 : 정확도 출력
     print('====================================================================================')
-    # test_show(test_loader, device)  # 틀린 label 이미지 확인하고 싶을 때 진행 : 사진 비교
+    test_show(test_loader, device)  # 틀린 label 이미지 확인하고 싶을 때 진행 : 사진 비교
 
 def acc_function(correct, total) :
     acc = correct / total * 100
@@ -50,7 +51,6 @@ def test(model, data_loader, device) :
     correct = 0
     total = 0
     y_pred, y_true = [], []
-    test_data_path = "./dataset/test"
     with torch.no_grad():
         for i, (image, label, path) in enumerate(data_loader) :
             images, labels = image.to(device), label.to(device)
@@ -58,9 +58,9 @@ def test(model, data_loader, device) :
             _, argmax = torch.max(output, 1)
             total += images.size(0)
             correct += (labels == argmax).sum().item()
-
+            
             argmax = argmax.data.cpu().numpy()  # gpu에 할당된 tensor를 cpu 텐서로 변환
-            labels = labels.data.cpu().numpy()  # gpu에 할당된 tensor를 cpu 텐서로 변환
+            labels = labels.data.cpu().numpy()  # gpu에 할당된 tensor를 cpu 텐서로 변환            
 
             y_pred.extend(argmax) # Save Prediction
             y_true.extend(labels) # Save True
@@ -71,42 +71,36 @@ def test(model, data_loader, device) :
     # Build confusion matrix
     classes = ('20F', '20M', '30F', '30M', '40F', '40M')
     cf_matrix = confusion_matrix(y_true, y_pred)
-    df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix) * len(os.listdir(test_data_path)), 
-                    index = [i for i in classes], columns = [i for i in classes])
+    # df_cm = pd.DataFrame(cf_matrix/np.sum(cf_matrix) * 10, index = [i for i in classes],
+    df_cm = pd.DataFrame(cf_matrix, index = [i for i in classes], columns = [i for i in classes])
     plt.figure(figsize = (12,7))
     sn.heatmap(df_cm, annot=True)
-    plt.savefig('./experiment_result/confunsion_matrix.png')
+    plt.savefig('./experiment result/confunsion_matrix.png')    
 
 def test_show(test_loader, device) :
     model = models.__dict__["vgg16"](pretrained=False)
     model.classifier[6] = nn.Linear(in_features= 4096, out_features=6)
-    model.load_state_dict(torch.load("./experiment result/best_2.pt", map_location=device))
+    model.load_state_dict(torch.load("./experiment result/best_1.pt", map_location=device))
     model.to(device)
 
     test_data_path = "./dataset/test"
     label_dict = folder_name_det(test_data_path)
 
-    correct = 0
-    total = 0
     print('\n============================ Test Show ============================')
-
     model.eval()
-    with torch.no_grad() :
+    with torch.no_grad():
         for i, (imgs, labels, path) in enumerate(test_loader) :
-            inputs, outputs, paths = imgs.to(device), labels.to(device), path   
+            inputs, outputs, paths = imgs.to(device), labels.to(device), path     
 
             predicted_outputs = model(inputs)            
             _, predicted = torch.max(predicted_outputs, 1) # 제일 확률 높은 답안지 내놔라
-
-            # total += images.size(0)
-            # correct += (labels == argmax).sum().item()
 
             labels_temp = labels.item()
             labels_pr_temp = predicted.item()
 
             predicted_label = label_dict[str(labels_pr_temp)]
             answer_label = label_dict[str(labels_temp)]
-        
+
             if(answer_label != predicted_label):  # label과 predicted output이 다를 경우멘 사진출력
                 print("Answer Label\t:" , answer_label)
                 print("Predicted Label\t:", predicted_label)
@@ -118,7 +112,6 @@ def test_show(test_loader, device) :
                 cv2.imshow("test", img)
                 cv2.waitKey(0)
 
-
 def folder_name_det(folder_path) :
     folder_name = glob.glob(os.path.join(folder_path,"*"))
     det = {}
@@ -126,8 +119,9 @@ def folder_name_det(folder_path) :
         temp_name = path.split("\\")
         temp_name = temp_name[1]
         det[str(index)] = temp_name
-    return det        
+    return det     
 
+"""
 def draw_confunsion(test_loader, model):
     print("Drawing Confusion Matrix...")
     y_pred, y_true = [], []
@@ -149,6 +143,7 @@ def draw_confunsion(test_loader, model):
     plt.figure(figsize = (12,7))
     sn.heatmap(df_cm, annot=True)
     plt.savefig('./experiment result/output.png')
+"""
 
 if __name__ == '__main__':
     test_main()

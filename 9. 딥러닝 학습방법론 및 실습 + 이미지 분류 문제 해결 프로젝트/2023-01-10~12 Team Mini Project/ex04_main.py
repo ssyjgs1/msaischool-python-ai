@@ -14,14 +14,16 @@ from torchvision import models
 from timm.loss import BinaryCrossEntropy
 import rexnetv1
 
+
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-EPOCHS = 10
-LEARNING_RATE = 0.0001
+EPOCHS = 20
 HALF_PERCENT = 0.5
 FULL_PERCENT = 1.0
-BATCH_SIZE = 64
 LOSS_FUNCTION = BinaryCrossEntropy()
+FIX = 2  ## 새로운 모델 훈련시 고쳐주시면 됩니다
+BATCH_SIZE = 16
+LEARNING_RATE = 0.001
 
 def main():    
     ### 0. Augmentation (train & valid)
@@ -49,6 +51,7 @@ def main():
             A.RandomRain(brightness_coefficient= 0.7, drop_width= 1,    # 비
                         blur_value= 3, p= FULL_PERCENT), 
         ], p = HALF_PERCENT),
+
         A.Normalize(mean=(0.485, 0.456, 0.406), std= (0.229, 0.224, 0.225)),
         ToTensorV2()
     ])
@@ -122,6 +125,7 @@ def main():
     # model_list= [model1, model2, model3, model4, model5]
     model_list= [model6]
 
+
     #### 4 epoch, optim loss
     epochs = EPOCHS
     loss_function = LOSS_FUNCTION
@@ -132,13 +136,12 @@ def main():
     valid_steps = len(valid_loader)
     
     for index, model in enumerate(model_list):
-        optimizer = torch.optim.AdamW(model.parameters(), lr= LEARNING_RATE)
-        save_path = f'./best{str(index)}.pt'
-        dfForAccuracy = pd.DataFrame(index=list(range(epochs)),
-                                    columns=['Epoch', 'Accuracy', 'Loss'])
+        optimizer = torch.optim.AdamW(model.parameters(), lr= LEARNING_RATE)        
+        save_path = f'./best{str(FIX)}.pt'
+        dfForAccuracy = pd.DataFrame(index=list(range(epochs)), columns=['Epoch', 'Accuracy', 'Loss'])
 
         if os.path.exists(save_path) :
-            best_val_acc = max(pd.read_csv(f'./modelAccuracy{str(index)}.csv')['Accuracy'].tolist())
+            best_val_acc = max(pd.read_csv(f'./modelAccuracy{str(FIX)}.csv')['Accuracy'].tolist())
             model.load_state_dict(torch.load(save_path))
 
         for epoch in range(epochs) :
@@ -173,21 +176,21 @@ def main():
             val_accuracy = val_acc / len(valid_dataset)
             train_accuracy = train_acc / len(train_dataset)
 
-            dfForAccuracy.loc[epoch, 'Epoch'] = epoch + 1
-            dfForAccuracy.loc[epoch, 'Accuracy'] = round(val_accuracy, 3)
-            dfForAccuracy.loc[epoch, 'Loss'] = runing_loss
-
             print(f"epoch [{epoch+1}/{epochs}]"
                 f" train loss : {(runing_loss / train_steps):.3f} "
                 f"train_acc : {train_accuracy:.3f} val_acc : {val_accuracy:.3f}"
             )
 
+            dfForAccuracy.loc[epoch, 'Epoch']    = epoch + 1
+            dfForAccuracy.loc[epoch, 'Accuracy'] = round(val_accuracy, 4) * 100
+            dfForAccuracy.loc[epoch, 'Loss']     = round( (runing_loss / train_steps), 4)
+            
             if val_accuracy > best_val_acc :
                 best_val_acc = val_accuracy
                 torch.save(model.state_dict(), save_path)
 
             if epoch == epochs - 1 :
-                dfForAccuracy.to_csv(f"./modelAccuracy{str(index)}.csv" , index=False)
+                dfForAccuracy.to_csv(f"./modelAccuracy{str(FIX)}.csv" , index=False)
 
 if __name__ == '__main__':
     main()

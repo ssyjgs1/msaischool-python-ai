@@ -1,0 +1,10 @@
+# path and delete cache
+train : ./dataset/train/images
+val : ./dataset/valid/images
+test : ./dataset/test/images
+
+# number of classes
+nc : 13
+
+# names of classes
+names : ['big bus', 'big truck', 'bus-l-', 'bus-s-', 'bus-s-', 'car', 'mid truck', 'small bus', 'small truck', 'truck-l-', 'truck-m-', 'truck-s-', 'truck-xl-']

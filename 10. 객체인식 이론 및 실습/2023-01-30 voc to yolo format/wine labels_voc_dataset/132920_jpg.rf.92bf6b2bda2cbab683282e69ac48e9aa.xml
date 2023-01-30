@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>132920_jpg.rf.92bf6b2bda2cbab683282e69ac48e9aa.jpg</filename>
+	<path>132920_jpg.rf.92bf6b2bda2cbab683282e69ac48e9aa.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>767</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>149</xmin>
+			<xmax>620</xmax>
+			<ymin>118</ymin>
+			<ymax>207</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>251</xmin>
+			<xmax>520</xmax>
+			<ymin>232</ymin>
+			<ymax>268</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>58</xmin>
+			<xmax>705</xmax>
+			<ymin>272</ymin>
+			<ymax>605</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Established YearYear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>313</xmin>
+			<xmax>464</xmax>
+			<ymin>607</ymin>
+			<ymax>676</ymax>
+		</bndbox>
+	</object>
+</annotation>

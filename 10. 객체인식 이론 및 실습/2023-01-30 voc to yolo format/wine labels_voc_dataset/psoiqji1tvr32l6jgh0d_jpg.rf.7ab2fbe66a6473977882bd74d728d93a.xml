@@ -1,0 +1,40 @@
+<annotation>
+	<folder></folder>
+	<filename>psoiqji1tvr32l6jgh0d_jpg.rf.7ab2fbe66a6473977882bd74d728d93a.jpg</filename>
+	<path>psoiqji1tvr32l6jgh0d_jpg.rf.7ab2fbe66a6473977882bd74d728d93a.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>533</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>159</xmin>
+			<xmax>607</xmax>
+			<ymin>86</ymin>
+			<ymax>331</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>293</xmin>
+			<xmax>477</xmax>
+			<ymin>407</ymin>
+			<ymax>429</ymax>
+		</bndbox>
+	</object>
+</annotation>

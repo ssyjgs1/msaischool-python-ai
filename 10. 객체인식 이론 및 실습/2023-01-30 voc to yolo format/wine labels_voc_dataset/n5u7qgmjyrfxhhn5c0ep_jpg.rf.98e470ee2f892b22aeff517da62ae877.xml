@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>n5u7qgmjyrfxhhn5c0ep_jpg.rf.98e470ee2f892b22aeff517da62ae877.jpg</filename>
+	<path>n5u7qgmjyrfxhhn5c0ep_jpg.rf.98e470ee2f892b22aeff517da62ae877.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>834</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Appellation AOC DOC AVARegion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>263</xmin>
+			<xmax>510</xmax>
+			<ymin>613</ymin>
+			<ymax>641</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>226</xmin>
+			<xmax>541</xmax>
+			<ymin>676</ymin>
+			<ymax>698</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>192</xmin>
+			<xmax>552</xmax>
+			<ymin>60</ymin>
+			<ymax>188</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>118</xmin>
+			<xmax>664</xmax>
+			<ymin>216</ymin>
+			<ymax>545</ymax>
+		</bndbox>
+	</object>
+</annotation>

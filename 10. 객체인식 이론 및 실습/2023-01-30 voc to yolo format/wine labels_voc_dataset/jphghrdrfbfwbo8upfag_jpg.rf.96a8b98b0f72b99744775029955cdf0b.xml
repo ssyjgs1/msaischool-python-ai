@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>jphghrdrfbfwbo8upfag_jpg.rf.96a8b98b0f72b99744775029955cdf0b.jpg</filename>
+	<path>jphghrdrfbfwbo8upfag_jpg.rf.96a8b98b0f72b99744775029955cdf0b.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>355</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>244</xmin>
+			<xmax>523</xmax>
+			<ymin>294</ymin>
+			<ymax>328</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation QualityLevel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>122</xmin>
+			<xmax>643</xmax>
+			<ymin>212</ymin>
+			<ymax>284</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>4</xmin>
+			<xmax>764</xmax>
+			<ymin>1</ymin>
+			<ymax>178</ymax>
+		</bndbox>
+	</object>
+</annotation>

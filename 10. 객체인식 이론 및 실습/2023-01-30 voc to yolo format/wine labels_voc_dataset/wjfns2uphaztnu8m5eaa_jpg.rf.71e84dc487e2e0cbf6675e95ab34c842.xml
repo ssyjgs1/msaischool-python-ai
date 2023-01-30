@@ -1,0 +1,40 @@
+<annotation>
+	<folder></folder>
+	<filename>wjfns2uphaztnu8m5eaa_jpg.rf.71e84dc487e2e0cbf6675e95ab34c842.jpg</filename>
+	<path>wjfns2uphaztnu8m5eaa_jpg.rf.71e84dc487e2e0cbf6675e95ab34c842.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>922</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>144</xmin>
+			<xmax>624</xmax>
+			<ymin>50</ymin>
+			<ymax>141</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>4</xmin>
+			<xmax>747</xmax>
+			<ymin>241</ymin>
+			<ymax>921</ymax>
+		</bndbox>
+	</object>
+</annotation>

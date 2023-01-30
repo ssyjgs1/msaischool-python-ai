@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>fkdukdomssutyh6nnah2_jpg.rf.356fedc8c4589155048f33fc9310b174.jpg</filename>
+	<path>fkdukdomssutyh6nnah2_jpg.rf.356fedc8c4589155048f33fc9310b174.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>1114</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>441</xmin>
+			<xmax>711</xmax>
+			<ymin>994</ymin>
+			<ymax>1032</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>70</xmin>
+			<xmax>340</xmax>
+			<ymin>977</ymin>
+			<ymax>1070</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>1</xmin>
+			<xmax>768</xmax>
+			<ymin>1</ymin>
+			<ymax>933</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>92516_jpg.rf.2a6ae8837083918f0b2e1e9bba55e366.jpg</filename>
+	<path>92516_jpg.rf.2a6ae8837083918f0b2e1e9bba55e366.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>479</width>
+		<height>490</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Established YearYear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>204</xmin>
+			<xmax>284</xmax>
+			<ymin>90</ymin>
+			<ymax>125</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>87</xmin>
+			<xmax>399</xmax>
+			<ymin>151</ymin>
+			<ymax>202</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation AOC DOC AVARegion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>140</xmin>
+			<xmax>400</xmax>
+			<ymin>206</ymin>
+			<ymax>232</ymax>
+		</bndbox>
+	</object>
+</annotation>

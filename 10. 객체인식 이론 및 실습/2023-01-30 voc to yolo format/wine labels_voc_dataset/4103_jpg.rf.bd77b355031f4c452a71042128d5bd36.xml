@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>4103_jpg.rf.bd77b355031f4c452a71042128d5bd36.jpg</filename>
+	<path>4103_jpg.rf.bd77b355031f4c452a71042128d5bd36.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>38</xmin>
+			<xmax>453</xmax>
+			<ymin>46</ymin>
+			<ymax>421</ymax>
+		</bndbox>
+	</object>
+</annotation>

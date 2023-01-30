@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>90415_jpg.rf.1a17acc5d7b55ca31f17d54b95e7ee4d.jpg</filename>
+	<path>90415_jpg.rf.1a17acc5d7b55ca31f17d54b95e7ee4d.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>771</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>140</xmin>
+			<xmax>343</xmax>
+			<ymin>116</ymin>
+			<ymax>266</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>110</xmin>
+			<xmax>364</xmax>
+			<ymin>306</ymin>
+			<ymax>403</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>118</xmin>
+			<xmax>369</xmax>
+			<ymin>454</ymin>
+			<ymax>496</ymax>
+		</bndbox>
+	</object>
+</annotation>

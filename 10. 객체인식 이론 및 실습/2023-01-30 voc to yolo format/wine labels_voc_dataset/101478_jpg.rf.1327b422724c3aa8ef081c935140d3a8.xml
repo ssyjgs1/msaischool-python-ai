@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>101478_jpg.rf.1327b422724c3aa8ef081c935140d3a8.jpg</filename>
+	<path>101478_jpg.rf.1327b422724c3aa8ef081c935140d3a8.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>131</xmin>
+			<xmax>357</xmax>
+			<ymin>118</ymin>
+			<ymax>176</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>AlcoholPercentage</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>126</xmin>
+			<xmax>356</xmax>
+			<ymin>276</ymin>
+			<ymax>301</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation AOC DOC AVARegion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>171</xmin>
+			<xmax>310</xmax>
+			<ymin>303</ymin>
+			<ymax>318</ymax>
+		</bndbox>
+	</object>
+</annotation>

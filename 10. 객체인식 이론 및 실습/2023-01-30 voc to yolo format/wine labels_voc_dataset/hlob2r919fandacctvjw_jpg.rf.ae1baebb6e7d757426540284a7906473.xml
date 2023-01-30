@@ -1,0 +1,27 @@
+<annotation>
+	<folder></folder>
+	<filename>hlob2r919fandacctvjw_jpg.rf.ae1baebb6e7d757426540284a7906473.jpg</filename>
+	<path>hlob2r919fandacctvjw_jpg.rf.ae1baebb6e7d757426540284a7906473.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>545</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>77</xmin>
+			<xmax>557</xmax>
+			<ymin>58</ymin>
+			<ymax>212</ymax>
+		</bndbox>
+	</object>
+</annotation>

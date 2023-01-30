@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>nhnknw95l4na6jn80xqg_jpg.rf.6a120763b2e39b8ae78e10cffb0fc905.jpg</filename>
+	<path>nhnknw95l4na6jn80xqg_jpg.rf.6a120763b2e39b8ae78e10cffb0fc905.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>115</xmin>
+			<xmax>335</xmax>
+			<ymin>75</ymin>
+			<ymax>290</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Established YearYear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>220</xmin>
+			<xmax>325</xmax>
+			<ymin>217</ymin>
+			<ymax>259</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation QualityLevel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>309</xmin>
+			<xmax>345</xmax>
+			<ymin>320</ymin>
+			<ymax>338</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>137</xmin>
+			<xmax>341</xmax>
+			<ymin>343</ymin>
+			<ymax>368</ymax>
+		</bndbox>
+	</object>
+</annotation>

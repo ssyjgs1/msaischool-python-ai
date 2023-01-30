@@ -1,0 +1,40 @@
+<annotation>
+	<folder></folder>
+	<filename>96855_jpg.rf.1c35fe6318de38358dc678e6d1d651d1.jpg</filename>
+	<path>96855_jpg.rf.1c35fe6318de38358dc678e6d1d651d1.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>576</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>136</xmin>
+			<xmax>357</xmax>
+			<ymin>142</ymin>
+			<ymax>218</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation AOC DOC AVARegion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>175</xmin>
+			<xmax>312</xmax>
+			<ymin>283</ymin>
+			<ymax>321</ymax>
+		</bndbox>
+	</object>
+</annotation>

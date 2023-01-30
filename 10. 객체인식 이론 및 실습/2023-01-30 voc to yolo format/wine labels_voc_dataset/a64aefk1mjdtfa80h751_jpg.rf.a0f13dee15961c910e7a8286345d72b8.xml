@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>a64aefk1mjdtfa80h751_jpg.rf.a0f13dee15961c910e7a8286345d72b8.jpg</filename>
+	<path>a64aefk1mjdtfa80h751_jpg.rf.a0f13dee15961c910e7a8286345d72b8.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>354</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>103</xmin>
+			<xmax>382</xmax>
+			<ymin>152</ymin>
+			<ymax>189</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>204</xmin>
+			<xmax>277</xmax>
+			<ymin>25</ymin>
+			<ymax>85</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Established YearYear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>216</xmin>
+			<xmax>265</xmax>
+			<ymin>84</ymin>
+			<ymax>92</ymax>
+		</bndbox>
+	</object>
+</annotation>

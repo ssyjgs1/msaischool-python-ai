@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>157706_jpg.rf.900ccfb89b1bc18c9ced09d813a2361d.jpg</filename>
+	<path>157706_jpg.rf.900ccfb89b1bc18c9ced09d813a2361d.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Appellation QualityLevel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>146</xmin>
+			<xmax>259</xmax>
+			<ymin>131</ymin>
+			<ymax>149</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>63</xmin>
+			<xmax>422</xmax>
+			<ymin>158</ymin>
+			<ymax>337</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Appellation AOC DOC AVARegion</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>179</xmin>
+			<xmax>304</xmax>
+			<ymin>360</ymin>
+			<ymax>379</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>69</xmin>
+			<xmax>417</xmax>
+			<ymin>65</ymin>
+			<ymax>122</ymax>
+		</bndbox>
+	</object>
+</annotation>

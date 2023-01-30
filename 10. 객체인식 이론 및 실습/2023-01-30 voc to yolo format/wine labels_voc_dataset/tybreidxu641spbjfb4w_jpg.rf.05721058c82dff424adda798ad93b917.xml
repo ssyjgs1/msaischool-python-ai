@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>tybreidxu641spbjfb4w_jpg.rf.05721058c82dff424adda798ad93b917.jpg</filename>
+	<path>tybreidxu641spbjfb4w_jpg.rf.05721058c82dff424adda798ad93b917.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>480</width>
+		<height>552</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>Appellation QualityLevel</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>138</xmin>
+			<xmax>342</xmax>
+			<ymin>477</ymin>
+			<ymax>506</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>100</xmin>
+			<xmax>390</xmax>
+			<ymin>286</ymin>
+			<ymax>408</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>182</xmin>
+			<xmax>298</xmax>
+			<ymin>52</ymin>
+			<ymax>119</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>64</xmin>
+			<xmax>417</xmax>
+			<ymin>140</ymin>
+			<ymax>210</ymax>
+		</bndbox>
+	</object>
+</annotation>

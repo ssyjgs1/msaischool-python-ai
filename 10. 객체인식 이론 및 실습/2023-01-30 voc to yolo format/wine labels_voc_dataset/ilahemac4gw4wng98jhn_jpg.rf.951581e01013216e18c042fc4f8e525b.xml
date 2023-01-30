@@ -1,0 +1,53 @@
+<annotation>
+	<folder></folder>
+	<filename>ilahemac4gw4wng98jhn_jpg.rf.951581e01013216e18c042fc4f8e525b.jpg</filename>
+	<path>ilahemac4gw4wng98jhn_jpg.rf.951581e01013216e18c042fc4f8e525b.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>562</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>329</xmin>
+			<xmax>441</xmax>
+			<ymin>477</ymin>
+			<ymax>506</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Maker-Name</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>257</xmin>
+			<xmax>505</xmax>
+			<ymin>432</ymin>
+			<ymax>471</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>Distinct Logo</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>99</xmin>
+			<xmax>765</xmax>
+			<ymin>24</ymin>
+			<ymax>444</ymax>
+		</bndbox>
+	</object>
+</annotation>

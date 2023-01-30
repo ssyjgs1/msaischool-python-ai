@@ -1,0 +1,66 @@
+<annotation>
+	<folder></folder>
+	<filename>lam1et9916hppz2sq8dn_jpg.rf.962f631bb4f193297314c1dddc929ae7.jpg</filename>
+	<path>lam1et9916hppz2sq8dn_jpg.rf.962f631bb4f193297314c1dddc929ae7.jpg</path>
+	<source>
+		<database>roboflow.ai</database>
+	</source>
+	<size>
+		<width>767</width>
+		<height>767</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>87</xmin>
+			<xmax>654</xmax>
+			<ymin>82</ymin>
+			<ymax>367</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>63</xmin>
+			<xmax>310</xmax>
+			<ymin>598</ymin>
+			<ymax>647</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>VintageYear</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>342</xmin>
+			<xmax>414</xmax>
+			<ymin>609</ymin>
+			<ymax>644</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>TypeWine Type</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<occluded>0</occluded>
+		<bndbox>
+			<xmin>64</xmin>
+			<xmax>452</xmax>
+			<ymin>666</ymin>
+			<ymax>709</ymax>
+		</bndbox>
+	</object>
+</annotation>

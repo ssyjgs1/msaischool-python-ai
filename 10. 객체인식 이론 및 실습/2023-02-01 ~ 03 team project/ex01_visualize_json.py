@@ -6,24 +6,18 @@ import copy
 
 def main():
     # 데이터셋 최상단 경로
-    data_root = 'A:/park_dataset'
-
-    for use in ['val', 'train']:
+    data_root = f'D:/dataset'
+    for use in ['train', 'val']:
         image_root = os.path.join(data_root, use, 'images')
-        label_root = os.path.join(data_root, use, 'labels')
-        
-        image_paths = glob.glob(os.path.join(image_root, '*', '12.food_truck', '*.jpg'))
-        # image_paths = glob.glob(os.path.join(image_root, '*'))
-        for image_path in image_paths: # [:600] [600:1200] [1200:1800] - sit vendor의 경우
-            print(image_path.split('\\')[-1])
-            # A:/test/park_data\train\image\train_data\illegal\banner\13_dsp_su_10-27_16-29-04_aft_DF5.jpg
-            # ['A:/test/park_data', 'valid', 'image', 'valid_data', 'illegal', 'banner', '13_dsp_su_10-27_16-48-57_aft_DF5.jpg']
-            # image, json matching
+        image_paths = glob.glob(os.path.join(image_root, '23.toilet', '*.jpg'))
+        # print(len(image_paths))
 
+        for index, image_path in enumerate(image_paths):
+            print(index, image_path.split('\\')[-1])
             label_path = image_path.replace('images', 'labels')
             label_path = label_path.replace('.jpg', '.json')
             if not os.path.isfile(label_path):
-                # print('File does not exist:', label_path)
+                print('File does not exist:', label_path)
                 pass
             # print(image_path, label_path)
             anno_data = read_json(label_path)
@@ -31,7 +25,7 @@ def main():
 
 
             image, anno_data = resize(image_path, anno_data, (1470, 810))
-            image = visualize_test(image, anno_data)
+            image = visualize_test(image, anno_data, index)
 
             cv2.imshow('visual', image)
             # if cv2.waitKey(0) & 0xff == ord('q'):
@@ -49,7 +43,7 @@ def main():
                 else: # 위 if문에서 지정하지 않은 키보드 입력인 경우 다음 이미지로 넘어감
                     break
 
-def visualize_test(image, anno_data):
+def visualize_test(image, anno_data, index):
     # resize 결과 시각화 용 코드
     for anno in anno_data['annos']:
         # rectangle
@@ -58,8 +52,9 @@ def visualize_test(image, anno_data):
         image = cv2.rectangle(image, pt1, pt2, (250, 0, 250), 5)
 
         # text
-        pt = (anno['bbox'][0], anno['bbox'][3] - 20)
-        image = cv2.putText(image, anno['label'], pt, cv2.FONT_HERSHEY_SIMPLEX, 2, (250, 0, 250), 2, cv2.LINE_AA)
+        pt = (anno['bbox'][0], anno['bbox'][3] + 50)
+        image = cv2.putText(image, anno['label'], pt, cv2.FONT_HERSHEY_SIMPLEX, 2, (250, 0, 250), 4)
+        image = cv2.putText(image, str(index), (50,50), cv2.FONT_HERSHEY_SIMPLEX, 2, (250, 250, 250), 4)
 
     image = cv2.resize(image, (960, 540))
 
@@ -111,24 +106,24 @@ def read_json(json_path):
 
     return data
 
-def visualize(image_path, anno_data):
-    # label과 bbox 시각화
-    image = cv2.imread(image_path)
+# def visualize(image_path, anno_data):
+#     # label과 bbox 시각화
+#     image = cv2.imread(image_path)
 
-    for anno in anno_data['annos']:
-        # rectangle
-        pt1 = (anno['bbox'][0], anno['bbox'][1])
-        pt2 = (anno['bbox'][2], anno['bbox'][3])
-        image = cv2.rectangle(image, pt1, pt2, (250, 0, 250), 5)
+#     for anno in anno_data['annos']:
+#         # rectangle
+#         pt1 = (anno['bbox'][0], anno['bbox'][1])
+#         pt2 = (anno['bbox'][2], anno['bbox'][3])
+#         image = cv2.rectangle(image, pt1, pt2, (250, 0, 250), 5)
 
-        # text
-        pt = (anno['bbox'][0], anno['bbox'][3] - 20)
-        image = cv2.putText(image, anno['label'], pt, cv2.FONT_HERSHEY_SIMPLEX, 2, (250, 0, 250), 1, cv2.LINE_AA)
+#         # text
+#         pt = (anno['bbox'][0], anno['bbox'][3] - 20)
+#         image = cv2.putText(image, anno['label'], pt, cv2.FONT_HERSHEY_SIMPLEX, 2, (250, 0, 250), 1, cv2.LINE_AA)
 
-    # 원본 이미지가 크므로 원활한 시각화를 위해 이미지 크기 조절
-    image = cv2.resize(image, (960, 540))
+#     # 원본 이미지가 크므로 원활한 시각화를 위해 이미지 크기 조절
+#     image = cv2.resize(image, (960, 540))
 
-    return image
+#     return image
 
 
 def resize(image_path, anno_data, size):

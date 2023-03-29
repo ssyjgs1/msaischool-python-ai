@@ -1,0 +1,6 @@
+train: ../train/images
+val: ../train/images # /valid/images
+test: ../train/images # /valid/images
+
+nc: 6
+names: ['drone', 'bird', 'airplane', 'helicopter', 'balloon', 'military drone']
